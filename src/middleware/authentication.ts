@@ -46,7 +46,7 @@ const AuthenticationMiddleware = async (
     opts: FastifyPluginOptions
 ) => {
     fastify.register(fastifyJwt, {
-        secret: process.env.FASTIFY_AUTH_JWT_SECRET
+        secret: "Fastify-Test"
     });
 };
 
